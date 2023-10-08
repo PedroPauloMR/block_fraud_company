@@ -147,8 +147,8 @@ More info at: https://www.surveymonkey.com/mp/sample-size-calculator/
 
 ## Model
 ![](img/classifiers_tested.png)
-classifiers_tested.PNG
 
+- Tested some models and compared each metric
 - Verify Brier Loss: (XGBoost): 0.001572 and  (CatBoost): 0.0025128
 
 ## Tuning
