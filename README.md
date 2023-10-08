@@ -23,7 +23,9 @@ For FBC, in addition to getting many customers with this risky strategy to guara
 
 
 ## Data Filtering
-![](img/quantile_verification.png)
+
+![](img/quantile_verification.PNG)
+
 - Use lnp.log( ) to verify possible outliers between the "amount" and "step" columns;
 - Highly concentrated in CASH_IN / CAS_OUT / PAYMENT in "type" column;
 - Data filtered using IQR on "step" and "amount";
@@ -45,7 +47,9 @@ Features to create:
 
 ## Univariate Analysis
 > Part 1
-![](img/univariate_analysis.png)
+
+![](img/univariate_analysis.PNG)
+
 - AMOUNT higher concentration: between 59873.14 and 442412.39
 - Origin old balance minor concentration: between 8102.08 and 162753.79
 - Origin new balance minor concentration: between 98714.77 and 442412.39
@@ -54,7 +58,9 @@ Features to create:
 
 
 > Part 2
-![](img/univariate_analysis2.png)
+
+![](img/univariate_analysis2.PNG)
+
 - Cash-out and payment represent the major part of the total transactions.
 - The great majority of the transactions are not flagged as fraud.
 - There is only one type of origin: customer.
@@ -109,7 +115,9 @@ Features to create:
 | H11  |At least 20% of the total non fraudulent transactions are flagged as fraud.                | FALSE|
 
 ## Multivariate analysis
-![](img/multivariate_analysis2.png)
+
+![](img/multivariate_analysis2.PNG)
+
 > Key points:
 - amount and new_balance_dest: modearate positive correlation
 - old_balance_orig and new_balance_orig: perfect positive correlation
@@ -146,16 +154,23 @@ More info at: https://www.surveymonkey.com/mp/sample-size-calculator/
 - TRAIN was balanced with **SMOTETomek**
 
 ## Model
-![](img/classifiers_tested.png)
+
+![](img/classifiers_tested.PNG)
 
 - Tested some models and compared each metric
 - Verify Brier Loss: (XGBoost): 0.001572 and  (CatBoost): 0.0025128
 
 ## Tuning
-![](img/model_tuned.png)
+
+![](img/model_tuned.PNG)
+
+- Tested with **RandomizedSearch**
 
 ## Calibration
-![](img/calibration_curve.png)
+
+![](img/calibration_curve.PNG)
+
+- Verify the probability distributions to predict
 
 
 ## Cross-Validation - all performed models
