@@ -44,7 +44,7 @@ Features to create:
 
 
 ## Univariate Analysis
-> Part1
+> Part 1
 ![](img/univariate_analysis.png)
 - AMOUNT higher concentration: between 59873.14 and 442412.39
 - Origin old balance minor concentration: between 8102.08 and 162753.79
@@ -53,7 +53,7 @@ Features to create:
 - Destination new balance minor concentration: between 268336.29 and 1982758.26
 
 
-> Part2
+> Part 2
 ![](img/univariate_analysis2.png)
 - Cash-out and payment represent the major part of the total transactions.
 - The great majority of the transactions are not flagged as fraud.
